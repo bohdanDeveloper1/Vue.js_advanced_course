@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      <b-alert v-shadow show>Default Alert</b-alert>
+    </b-container>
+
+    <b-container class="alert-container">
+      <b-alert v-shadow.fiolet show>Default Alert</b-alert>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
